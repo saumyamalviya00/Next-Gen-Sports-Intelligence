@@ -1,0 +1,11 @@
+Python 3.8+
+
+OpenCV 4.5+
+
+ONNX Runtime 1.10+
+
+EasyOCR 1.5+
+
+scikit-learn 1.0+
+
+numpy 
