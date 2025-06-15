@@ -1,0 +1,3 @@
+_pycache__/
+export_onnx/
+yolov8n.pt/

@@ -1,0 +1,12 @@
+{
+  "frame_count": 220,
+  "possession": {
+    "team_1": 0.0,
+    "team_2": 0.0,
+    "neutral": 1
+  },
+  "team_assignments": {},
+  "jersey_numbers": {},
+  "average_fps": 5.882526500396971,
+  "processing_time": 8.8
+}
