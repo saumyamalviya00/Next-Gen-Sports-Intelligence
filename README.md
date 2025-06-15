@@ -27,28 +27,8 @@ It performs **player detection, jersey OCR, team classification, possession stat
 
 </div>
 
-
-#🚀 Competitive Edge
-Traditional Systems	✅ This System
-Manual team assignment	🔍 Auto team detection via KMeans
-Generic object tracking	🆔 Re-ID using OCR + persistent player IDs
-No commentary	🗣️ Real-time commentary using TTS (pyttsx3)
-Post-match only analysis	📊 Live possession, offside, heatmaps
-High resource requirements	💻 Runs fully offline & CPU-friendly
-
-#🔩 System Modules
-python
-Copy
-Edit
-class SportsAnalyzer:
-    def __init__(self):
-        self.detector     = YOLOv11Detector()      # ONNX-based detection
-        self.tracker      = PlayerTracker()        # DeepSORT integration
-        self.ocr          = JerseyOCR()            # EasyOCR jersey detection
-        self.analytics    = GameIntelligence()     # Possession, offside logic
-        self.commentator  = AINarrator()           # Rule-based + TTS commentary
         
-#🔁 Data Flow
+## 🔁 Data Flow
 🎥 Frame Capture → OpenCV
 
 🧠 Detection → YOLOv11 (ONNX Runtime)
@@ -65,23 +45,14 @@ class SportsAnalyzer:
 
 🎬 Overlay & Output → Annotated video & stats
 
-#📊 Performance Metrics
-Tested on NVIDIA RTX 3060 (720p input):
-
-Component	Time (ms/frame)	FPS
-YOLOv11 Detection	18.2 ms	
-DeepSORT Tracking	9.7 ms	
-Jersey OCR (EasyOCR)	6.3 ms/player	
-Full Pipeline	34.2 ms	🔥 29.2 FPS
-
-Accuracy
+## Accuracy
 🎯 Player Detection: 96.4% mAP@0.5
 
 🔢 Jersey OCR Accuracy: 88.7% (top-1)
 
 🧢 Team Classification Accuracy: 94.2%
 
-#📂 Project Structure
+## 📂 Project Structure
 Next-Gen Sports Intelligence/
 ├── src/
 │   ├── detector.py       # YOLOv11 ONNX inference
@@ -94,25 +65,14 @@ Next-Gen Sports Intelligence/
 ├── data/                 # Input video files
 └── outputs/              # Logs, overlays, heatmaps
 
-#▶️ Running the System
-python -m src.main
-
-Input: data/15sec_input_720p.mp4
-
-Output: outputs/annotated_output.mp4
-
-Heatmaps: outputs/heatmap_frame_*.png
-
-Logs: outputs/game_log.json
-
-#📦 Deliverables
-File	                  Purpose
-main.py	               Central pipeline
+## 📦 Deliverables
+File	                 Purpose
+main.py	                 Central pipeline
 annotated_output.mp4	 Video with tactical overlays
 game_log.json	         JSON log of possession, offside, events
-heatmap_frame_*.png	   Player movement density plots
+heatmap_frame_*.png	     Player movement density plots
 
-#✨ What Makes It Unique? This isn't just another tracking script — it's a real-time AI sports analyst.
+## ✨ What Makes It Unique? This isn't just another tracking script — it's a real-time AI sports analyst.
 ✅ Maintains player identity
 ✅ Tracks jersey numbers + teams
 ✅ Calculates live possession
