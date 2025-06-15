@@ -65,6 +65,22 @@ Next-Gen Sports Intelligence/
 ├── data/                 # Input video files
 └── outputs/              # Logs, overlays, heatmaps
 
+## 📦 Setup and Execution
+bash
+Copy
+Edit
+pip install -r requirements.txt
+python -m src.main
+
+## 🛠️ Dependencies
+Python 3.8+
+OpenCV 4.5+
+ONNX Runtime 1.10+
+EasyOCR 1.5+
+scikit-learn 1.0+
+pyttsx3 (for TTS commentary)
+
+
 ## 📦 Deliverables
 File	                 Purpose
 main.py	                 Central pipeline
